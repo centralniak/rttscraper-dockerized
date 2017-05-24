@@ -26,8 +26,8 @@ Pulling image into hyper
 
     hyper pull "us.gcr.io/rttscraper/rttscraper:latest"
 
-Running in hyper
-----------------
+Running in hyper as cronjob
+---------------------------
 ::
 
-    hyper run -d --name rttscraper "us.gcr.io/rttscraper/rttscraper:latest"
+    hyper cron create --hour=6 --minute=0 --name rttscraper "us.gcr.io/rttscraper/rttscraper:latest"
