@@ -9,4 +9,7 @@ Building image
 
 Pushing to registry
 -------------------
-TBD
+::
+
+    docker tag rttscraper us.gcr.io/rttscraper/rttscraper
+    gcloud docker -- push us.gcr.io/rttscraper/rttscraper
